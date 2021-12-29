@@ -53,6 +53,10 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
+" Set the cursor highlight
+set cursorline
+set cursorcolumn
+" highlight Cursor guibg=#626262
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -492,5 +496,5 @@ endfunction
 set nocompatible
 filetype plugin on
 syntax on
-
+"Plug 'vimwiki/vimwiki'
 
