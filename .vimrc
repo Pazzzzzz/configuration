@@ -494,7 +494,16 @@ endfunction
 " => Vim Wiki setting for better note taking
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
+filetype on
 filetype plugin on
 syntax on
-"Plug 'vimwiki/vimwiki'
+" PLUGINS ---------------------------------------------------------------- {{{
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'vimwiki/vimwiki'
+
+call plug#end()
+
+" }}}
 
